@@ -1,0 +1,42 @@
+body { font-family: Arial;
+    -webkit-text-size-adjust: none
+ }
+a, a:hover { color: #369; text-decoration: none }
+a:hover { color: #fff; background: #369 }
+.db-player { display: inline-block; position: relative; width: 345px; height: 38px; background: #f2f2f2; border: 1px solid #e8e8e8; border-radius: 4px; margin: 0 0 10px }
+.db-player .time { position: absolute; top: 22px; left: 284px; color: #555; font-size: 10px }
+.db-player .title { position: absolute; top: 5px; left: 45px; color: #666; font-size: 12px }
+.db-player .range { position: absolute; top: 25px; left: 38px; font-size: 0; color: #beeabc; width: 235px; height: 2px; background: #beeabc; border: 1px solid #d6d6d6;
+    -webkit-border-radius: 5px;
+    -webkit-appearance: none !important
+}
+.db-player .range::-webkit-slider-thumb { position: absolute; z-index: 99; width: 9px; height: 9px; background: #fff; border: 1px solid #cbcbcb; cursor: pointer;
+    -webkit-box-shadow: 0 0 2px #eee;
+    -webkit-border-radius: 4px;
+    -webkit-appearance: none !important;  
+}
+.db-player span.range { top: 27px; overflow: hidden }
+.db-player span.range b { display: inline-block; height: 2px; background-color: #5abd4f }
+.db-player .bn-seek { z-index: 1; position: absolute; top: 28px; left: 41px; display: inline-block; height: 2px; background-color: #5abd4f }
+.db-player .bn-play,
+.db-player .bn-pause { position: absolute; top: 6px; left: 6px; display: inline-block; cursor: pointer; width: 25px; height: 25px; border-radius: 13px; background: #fff url(../img/bn-player.png) no-repeat;
+    -webkit-box-shadow: 0 0 4px #bbb; 
+    box-shadow: 0 0 4px #bbb
+}
+.db-player .bn-play { background-position: 9px 8px }
+.db-player .bn-pause { background-position: 8px -11px }
+
+/*
+audio::-webkit-media-controls-panel { background: transparent }
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-current-time-display { display: none!important }
+*/
+
+.db-songslist { font-size: 12px }
+.db-songslist ul { margin: 0; padding: 0; list-style: none; border-top: 1px dashed #ccc }
+.db-songslist li { border-bottom: 1px dashed #ccc }
+.db-songslist a { display: block; padding: 0 5px 0 26px; height: 28px; line-height: 28px; background: url(../img/bn-player.png) no-repeat 6px -36px }
+.db-songslist a:hover { color: #369 }
+.db-songslist .playing { background: #eaf9e6 }
